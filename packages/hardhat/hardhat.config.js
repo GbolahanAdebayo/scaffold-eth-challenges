@@ -20,7 +20,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 */
 
 // Select the network you want to deploy to here:
-const defaultNetwork = "localhost";
+const defaultNetwork = "rinkeby";
 
 const mainnetGwei = 115;
 
@@ -28,7 +28,7 @@ function mnemonic() {
   try {
     return fs.readFileSync("./mnemonic.txt").toString().trim();
   } catch (e) {
-    if (defaultNetwork !== "localhost") {
+    if (defaultNetwork !== "rinkeby") {
       console.log(
         "☢️ WARNING: No mnemonic file created for a deploy account. Try `yarn run generate` and then `yarn run account`."
       );

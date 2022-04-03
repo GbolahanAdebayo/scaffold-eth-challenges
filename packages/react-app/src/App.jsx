@@ -55,7 +55,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -63,7 +63,7 @@ const NETWORKCHECK = true;
 
 // EXAMPLE STARTING JSON:
 const STARTING_JSON = {
-  description: "It's actually a bison?",
+  description: "It's actually a bison  or wtf am I seeing?",
   external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
   image: "https://austingriffith.com/images/paintings/buffalo.jpg",
   name: "Buffalo",
@@ -519,7 +519,7 @@ function App(props) {
   // the json for the nfts
   const json = {
     1: {
-      description: "It's actually a bison?",
+      description: "It's actually a bison or wtf am I seeing?",
       external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
       image: "https://austingriffith.com/images/paintings/buffalo.jpg",
       name: "Buffalo",
@@ -539,7 +539,7 @@ function App(props) {
       ],
     },
     2: {
-      description: "What is it so worried about?",
+      description: "What is it so worried about, the grass?",
       external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
       image: "https://austingriffith.com/images/paintings/zebra.jpg",
       name: "Zebra",
@@ -559,7 +559,7 @@ function App(props) {
       ],
     },
     3: {
-      description: "What a horn!",
+      description: "What a horn! Terrifying",
       external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
       image: "https://austingriffith.com/images/paintings/rhino.jpg",
       name: "Rhino",
